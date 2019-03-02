@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5F313F0222A5B6900654595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F313EF222A5B6900654595 /* AppDelegate.swift */; };
+		A5F313F2222A5B6900654595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F313F1222A5B6900654595 /* ViewController.swift */; };
+		A5F313F5222A5B6900654595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F313F3222A5B6900654595 /* Main.storyboard */; };
+		A5F313F7222A5B6B00654595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F313F6222A5B6B00654595 /* Assets.xcassets */; };
+		A5F313FA222A5B6B00654595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F313F8222A5B6B00654595 /* LaunchScreen.storyboard */; };
+		A5F31405222A5B6C00654595 /* AWS_AI_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F31404222A5B6C00654595 /* AWS_AI_SampleTests.swift */; };
+		A5F31410222A5B6C00654595 /* AWS_AI_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3140F222A5B6C00654595 /* AWS_AI_SampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5F31401222A5B6C00654595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F313E4222A5B6900654595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F313EB222A5B6900654595;
+			remoteInfo = "AWS AI Sample";
+		};
+		A5F3140C222A5B6C00654595 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F313E4222A5B6900654595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F313EB222A5B6900654595;
+			remoteInfo = "AWS AI Sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5F313EC222A5B6900654595 /* AWS AI Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWS AI Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F313EF222A5B6900654595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5F313F1222A5B6900654595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5F313F4222A5B6900654595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5F313F6222A5B6B00654595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5F313F9222A5B6B00654595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5F313FB222A5B6B00654595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F31400222A5B6C00654595 /* AWS AI SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AWS AI SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F31404222A5B6C00654595 /* AWS_AI_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS_AI_SampleTests.swift; sourceTree = "<group>"; };
+		A5F31406222A5B6C00654595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F3140B222A5B6C00654595 /* AWS AI SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AWS AI SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F3140F222A5B6C00654595 /* AWS_AI_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS_AI_SampleUITests.swift; sourceTree = "<group>"; };
+		A5F31411222A5B6C00654595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5F313E9222A5B6900654595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F313FD222A5B6C00654595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F31408222A5B6C00654595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5F313E3222A5B6900654595 = {
+			isa = PBXGroup;
+			children = (
+				A5F313EE222A5B6900654595 /* AWS AI Sample */,
+				A5F31403222A5B6C00654595 /* AWS AI SampleTests */,
+				A5F3140E222A5B6C00654595 /* AWS AI SampleUITests */,
+				A5F313ED222A5B6900654595 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5F313ED222A5B6900654595 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5F313EC222A5B6900654595 /* AWS AI Sample.app */,
+				A5F31400222A5B6C00654595 /* AWS AI SampleTests.xctest */,
+				A5F3140B222A5B6C00654595 /* AWS AI SampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5F313EE222A5B6900654595 /* AWS AI Sample */ = {
+			isa = PBXGroup;
+			children = (
+				A5F313EF222A5B6900654595 /* AppDelegate.swift */,
+				A5F313F1222A5B6900654595 /* ViewController.swift */,
+				A5F313F3222A5B6900654595 /* Main.storyboard */,
+				A5F313F6222A5B6B00654595 /* Assets.xcassets */,
+				A5F313F8222A5B6B00654595 /* LaunchScreen.storyboard */,
+				A5F313FB222A5B6B00654595 /* Info.plist */,
+			);
+			path = "AWS AI Sample";
+			sourceTree = "<group>";
+		};
+		A5F31403222A5B6C00654595 /* AWS AI SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5F31404222A5B6C00654595 /* AWS_AI_SampleTests.swift */,
+				A5F31406222A5B6C00654595 /* Info.plist */,
+			);
+			path = "AWS AI SampleTests";
+			sourceTree = "<group>";
+		};
+		A5F3140E222A5B6C00654595 /* AWS AI SampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5F3140F222A5B6C00654595 /* AWS_AI_SampleUITests.swift */,
+				A5F31411222A5B6C00654595 /* Info.plist */,
+			);
+			path = "AWS AI SampleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5F313EB222A5B6900654595 /* AWS AI Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F31414222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI Sample" */;
+			buildPhases = (
+				A5F313E8222A5B6900654595 /* Sources */,
+				A5F313E9222A5B6900654595 /* Frameworks */,
+				A5F313EA222A5B6900654595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWS AI Sample";
+			productName = "AWS AI Sample";
+			productReference = A5F313EC222A5B6900654595 /* AWS AI Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5F313FF222A5B6C00654595 /* AWS AI SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F31417222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI SampleTests" */;
+			buildPhases = (
+				A5F313FC222A5B6C00654595 /* Sources */,
+				A5F313FD222A5B6C00654595 /* Frameworks */,
+				A5F313FE222A5B6C00654595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F31402222A5B6C00654595 /* PBXTargetDependency */,
+			);
+			name = "AWS AI SampleTests";
+			productName = "AWS AI SampleTests";
+			productReference = A5F31400222A5B6C00654595 /* AWS AI SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5F3140A222A5B6C00654595 /* AWS AI SampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F3141A222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI SampleUITests" */;
+			buildPhases = (
+				A5F31407222A5B6C00654595 /* Sources */,
+				A5F31408222A5B6C00654595 /* Frameworks */,
+				A5F31409222A5B6C00654595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F3140D222A5B6C00654595 /* PBXTargetDependency */,
+			);
+			name = "AWS AI SampleUITests";
+			productName = "AWS AI SampleUITests";
+			productReference = A5F3140B222A5B6C00654595 /* AWS AI SampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5F313E4222A5B6900654595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Tasogare;
+				TargetAttributes = {
+					A5F313EB222A5B6900654595 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A5F313FF222A5B6C00654595 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A5F313EB222A5B6900654595;
+					};
+					A5F3140A222A5B6C00654595 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A5F313EB222A5B6900654595;
+					};
+				};
+			};
+			buildConfigurationList = A5F313E7222A5B6900654595 /* Build configuration list for PBXProject "AWS AI Sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5F313E3222A5B6900654595;
+			productRefGroup = A5F313ED222A5B6900654595 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5F313EB222A5B6900654595 /* AWS AI Sample */,
+				A5F313FF222A5B6C00654595 /* AWS AI SampleTests */,
+				A5F3140A222A5B6C00654595 /* AWS AI SampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5F313EA222A5B6900654595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F313FA222A5B6B00654595 /* LaunchScreen.storyboard in Resources */,
+				A5F313F7222A5B6B00654595 /* Assets.xcassets in Resources */,
+				A5F313F5222A5B6900654595 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F313FE222A5B6C00654595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F31409222A5B6C00654595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5F313E8222A5B6900654595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F313F2222A5B6900654595 /* ViewController.swift in Sources */,
+				A5F313F0222A5B6900654595 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F313FC222A5B6C00654595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F31405222A5B6C00654595 /* AWS_AI_SampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F31407222A5B6C00654595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F31410222A5B6C00654595 /* AWS_AI_SampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5F31402222A5B6C00654595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5F313EB222A5B6900654595 /* AWS AI Sample */;
+			targetProxy = A5F31401222A5B6C00654595 /* PBXContainerItemProxy */;
+		};
+		A5F3140D222A5B6C00654595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5F313EB222A5B6900654595 /* AWS AI Sample */;
+			targetProxy = A5F3140C222A5B6C00654595 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5F313F3222A5B6900654595 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5F313F4222A5B6900654595 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5F313F8222A5B6B00654595 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5F313F9222A5B6B00654595 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5F31412222A5B6C00654595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5F31413222A5B6C00654595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5F31415222A5B6C00654595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7MXJ4ZR6T;
+				INFOPLIST_FILE = "AWS AI Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dalv.AWS-AI-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5F31416222A5B6C00654595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7MXJ4ZR6T;
+				INFOPLIST_FILE = "AWS AI Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dalv.AWS-AI-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5F31418222A5B6C00654595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7MXJ4ZR6T;
+				INFOPLIST_FILE = "AWS AI SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dalv.AWS-AI-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWS AI Sample.app/AWS AI Sample";
+			};
+			name = Debug;
+		};
+		A5F31419222A5B6C00654595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7MXJ4ZR6T;
+				INFOPLIST_FILE = "AWS AI SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dalv.AWS-AI-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWS AI Sample.app/AWS AI Sample";
+			};
+			name = Release;
+		};
+		A5F3141B222A5B6C00654595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7MXJ4ZR6T;
+				INFOPLIST_FILE = "AWS AI SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dalv.AWS-AI-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AWS AI Sample";
+			};
+			name = Debug;
+		};
+		A5F3141C222A5B6C00654595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7MXJ4ZR6T;
+				INFOPLIST_FILE = "AWS AI SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dalv.AWS-AI-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AWS AI Sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5F313E7222A5B6900654595 /* Build configuration list for PBXProject "AWS AI Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F31412222A5B6C00654595 /* Debug */,
+				A5F31413222A5B6C00654595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F31414222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F31415222A5B6C00654595 /* Debug */,
+				A5F31416222A5B6C00654595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F31417222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F31418222A5B6C00654595 /* Debug */,
+				A5F31419222A5B6C00654595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F3141A222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI SampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F3141B222A5B6C00654595 /* Debug */,
+				A5F3141C222A5B6C00654595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5F313E4222A5B6900654595 /* Project object */;
+}
