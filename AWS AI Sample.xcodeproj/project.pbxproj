@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60FF64EA4C61C1D6B9428028 /* Pods_AWS_AI_SampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ACB7787600B17D2DB73832 /* Pods_AWS_AI_SampleTests.framework */; };
+		67CDE04C964F98AFF57D766D /* Pods_AWS_AI_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AF60D568FC6615D76B8D24 /* Pods_AWS_AI_Sample.framework */; };
+		7CC40A4255AC5D13BBABBE6A /* Pods_AWS_AI_SampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 260D3FF3D536B1E50AB89197 /* Pods_AWS_AI_SampleUITests.framework */; };
 		A5F313F0222A5B6900654595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F313EF222A5B6900654595 /* AppDelegate.swift */; };
 		A5F313F2222A5B6900654595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F313F1222A5B6900654595 /* ViewController.swift */; };
 		A5F313F5222A5B6900654595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F313F3222A5B6900654595 /* Main.storyboard */; };
@@ -14,6 +17,9 @@
 		A5F313FA222A5B6B00654595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F313F8222A5B6B00654595 /* LaunchScreen.storyboard */; };
 		A5F31405222A5B6C00654595 /* AWS_AI_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F31404222A5B6C00654595 /* AWS_AI_SampleTests.swift */; };
 		A5F31410222A5B6C00654595 /* AWS_AI_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3140F222A5B6C00654595 /* AWS_AI_SampleUITests.swift */; };
+		A5F3141E222BC5B900654595 /* ApiResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3141D222BC5B900654595 /* ApiResultController.swift */; };
+		A5F31421222BD21000654595 /* ApiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F31420222BD21000654595 /* ApiTableViewCell.swift */; };
+		A5F31424222BED0200654595 /* FaceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F31423222BED0200654595 /* FaceRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260D3FF3D536B1E50AB89197 /* Pods_AWS_AI_SampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWS_AI_SampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27ACB7787600B17D2DB73832 /* Pods_AWS_AI_SampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWS_AI_SampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E230793C83D1338F7F0F09A /* Pods-AWS AI Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS AI Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWS AI Sample/Pods-AWS AI Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		40D52CC3CFDA2FF7DD7B3604 /* Pods-AWS AI SampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS AI SampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWS AI SampleTests/Pods-AWS AI SampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		418CCADE3DC11FBDA54366DB /* Pods-AWS AI Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS AI Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWS AI Sample/Pods-AWS AI Sample.release.xcconfig"; sourceTree = "<group>"; };
+		76B27B0A54EB483136E69517 /* Pods-AWS AI SampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS AI SampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWS AI SampleUITests/Pods-AWS AI SampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5F313EC222A5B6900654595 /* AWS AI Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWS AI Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F313EF222A5B6900654595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F313F1222A5B6900654595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,12 @@
 		A5F3140B222A5B6C00654595 /* AWS AI SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AWS AI SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F3140F222A5B6C00654595 /* AWS_AI_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS_AI_SampleUITests.swift; sourceTree = "<group>"; };
 		A5F31411222A5B6C00654595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F3141D222BC5B900654595 /* ApiResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResultController.swift; sourceTree = "<group>"; };
+		A5F31420222BD21000654595 /* ApiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTableViewCell.swift; sourceTree = "<group>"; };
+		A5F31423222BED0200654595 /* FaceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceRecord.swift; sourceTree = "<group>"; };
+		C0EA1BAEE1E7A8D4E5CE5350 /* Pods-AWS AI SampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS AI SampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWS AI SampleTests/Pods-AWS AI SampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4ED87E8B8393976E9878799 /* Pods-AWS AI SampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS AI SampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWS AI SampleUITests/Pods-AWS AI SampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F2AF60D568FC6615D76B8D24 /* Pods_AWS_AI_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWS_AI_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CDE04C964F98AFF57D766D /* Pods_AWS_AI_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60FF64EA4C61C1D6B9428028 /* Pods_AWS_AI_SampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC40A4255AC5D13BBABBE6A /* Pods_AWS_AI_SampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B447A1AFFBA9F8C496117C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2AF60D568FC6615D76B8D24 /* Pods_AWS_AI_Sample.framework */,
+				27ACB7787600B17D2DB73832 /* Pods_AWS_AI_SampleTests.framework */,
+				260D3FF3D536B1E50AB89197 /* Pods_AWS_AI_SampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5F313E3222A5B6900654595 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +112,8 @@
 				A5F31403222A5B6C00654595 /* AWS AI SampleTests */,
 				A5F3140E222A5B6C00654595 /* AWS AI SampleUITests */,
 				A5F313ED222A5B6900654595 /* Products */,
+				FD6E657D7F8CDA1E70556A19 /* Pods */,
+				65B447A1AFFBA9F8C496117C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +136,9 @@
 				A5F313F6222A5B6B00654595 /* Assets.xcassets */,
 				A5F313F8222A5B6B00654595 /* LaunchScreen.storyboard */,
 				A5F313FB222A5B6B00654595 /* Info.plist */,
+				A5F3141D222BC5B900654595 /* ApiResultController.swift */,
+				A5F31420222BD21000654595 /* ApiTableViewCell.swift */,
+				A5F31423222BED0200654595 /* FaceRecord.swift */,
 			);
 			path = "AWS AI Sample";
 			sourceTree = "<group>";
@@ -125,6 +161,19 @@
 			path = "AWS AI SampleUITests";
 			sourceTree = "<group>";
 		};
+		FD6E657D7F8CDA1E70556A19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E230793C83D1338F7F0F09A /* Pods-AWS AI Sample.debug.xcconfig */,
+				418CCADE3DC11FBDA54366DB /* Pods-AWS AI Sample.release.xcconfig */,
+				C0EA1BAEE1E7A8D4E5CE5350 /* Pods-AWS AI SampleTests.debug.xcconfig */,
+				40D52CC3CFDA2FF7DD7B3604 /* Pods-AWS AI SampleTests.release.xcconfig */,
+				76B27B0A54EB483136E69517 /* Pods-AWS AI SampleUITests.debug.xcconfig */,
+				E4ED87E8B8393976E9878799 /* Pods-AWS AI SampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F31414222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI Sample" */;
 			buildPhases = (
+				2DD4C7BB4417ADAB8176E8EE /* [CP] Check Pods Manifest.lock */,
 				A5F313E8222A5B6900654595 /* Sources */,
 				A5F313E9222A5B6900654595 /* Frameworks */,
 				A5F313EA222A5B6900654595 /* Resources */,
+				FBE97B730B7A64DFA35E2DE7 /* [CP] Embed Pods Frameworks */,
+				D2C055946CF9570AE15FDD2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F31417222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI SampleTests" */;
 			buildPhases = (
+				3ACD024C5F055D36895F094B /* [CP] Check Pods Manifest.lock */,
 				A5F313FC222A5B6C00654595 /* Sources */,
 				A5F313FD222A5B6C00654595 /* Frameworks */,
 				A5F313FE222A5B6C00654595 /* Resources */,
+				FB612F4B5E40D2C4044AF5FE /* [CP] Embed Pods Frameworks */,
+				BC82AC661646373E5D5E5BFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F3141A222A5B6C00654595 /* Build configuration list for PBXNativeTarget "AWS AI SampleUITests" */;
 			buildPhases = (
+				4D5DED135A848383C456664B /* [CP] Check Pods Manifest.lock */,
 				A5F31407222A5B6C00654595 /* Sources */,
 				A5F31408222A5B6C00654595 /* Frameworks */,
 				A5F31409222A5B6C00654595 /* Resources */,
+				748344AEEDB4445B2650F6A7 /* [CP] Embed Pods Frameworks */,
+				6A4823D4534B4C86318F47F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,12 +309,203 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DD4C7BB4417ADAB8176E8EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AWS AI Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ACD024C5F055D36895F094B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AWS AI SampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D5DED135A848383C456664B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AWS AI SampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A4823D4534B4C86318F47F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWS AI SampleUITests/Pods-AWS AI SampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748344AEEDB4445B2650F6A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWS AI SampleUITests/Pods-AWS AI SampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC82AC661646373E5D5E5BFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWS AI SampleTests/Pods-AWS AI SampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C055946CF9570AE15FDD2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWS AI Sample/Pods-AWS AI Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB612F4B5E40D2C4044AF5FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWS AI SampleTests/Pods-AWS AI SampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE97B730B7A64DFA35E2DE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AWS AI Sample/Pods-AWS AI Sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSRekognition/AWSRekognition.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSRekognition.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWS AI Sample/Pods-AWS AI Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5F313E8222A5B6900654595 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F3141E222BC5B900654595 /* ApiResultController.swift in Sources */,
+				A5F31424222BED0200654595 /* FaceRecord.swift in Sources */,
 				A5F313F2222A5B6900654595 /* ViewController.swift in Sources */,
+				A5F31421222BD21000654595 /* ApiTableViewCell.swift in Sources */,
 				A5F313F0222A5B6900654595 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +679,7 @@
 		};
 		A5F31415222A5B6C00654595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E230793C83D1338F7F0F09A /* Pods-AWS AI Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +698,7 @@
 		};
 		A5F31416222A5B6C00654595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418CCADE3DC11FBDA54366DB /* Pods-AWS AI Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +717,7 @@
 		};
 		A5F31418222A5B6C00654595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0EA1BAEE1E7A8D4E5CE5350 /* Pods-AWS AI SampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +739,7 @@
 		};
 		A5F31419222A5B6C00654595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D52CC3CFDA2FF7DD7B3604 /* Pods-AWS AI SampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +761,7 @@
 		};
 		A5F3141B222A5B6C00654595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B27B0A54EB483136E69517 /* Pods-AWS AI SampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +782,7 @@
 		};
 		A5F3141C222A5B6C00654595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4ED87E8B8393976E9878799 /* Pods-AWS AI SampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
