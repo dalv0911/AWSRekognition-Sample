@@ -12,6 +12,7 @@ import AWSRekognition
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     
     var rekognition: AWSRekognition?
     var apiResult: AWSRekognitionIndexFacesResponse?
@@ -21,7 +22,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         rekognition = AWSRekognition.default()
-        
+        loading.stopAnimating()
         // Only create the location Id once
 //        let request = AWSRekognitionCreateCollectionRequest()
 //        request?.collectionId = collectionId
@@ -36,9 +37,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func openApiResultView(_ sender: Any) {
-        let decorImage = decorFace(faceRecord: FaceRecord(data: apiResult!.faceRecords![0]))
-        imageView.image = decorImage
-        
         let apiResultView = self.storyboard?.instantiateViewController(withIdentifier: "ApiResultController") as! ApiResultController
         apiResultView.result = apiResult
         apiResultView.modalPresentationStyle = .custom
@@ -74,6 +72,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func sendImageToRekognition(imageData: Data) {
+        loading.startAnimating()
         let rekognitionImage = AWSRekognitionImage()
         rekognitionImage?.bytes = imageData
         let request = AWSRekognitionIndexFacesRequest()
@@ -81,39 +80,58 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         request?.image = rekognitionImage
         request?.detectionAttributes = ["ALL"]
         
-        rekognition?.indexFaces(request!).continueWith { (res) in
+        rekognition?.indexFaces(request!).continueOnSuccessWith(block: { (res) in
             if let error = res.error {
                 print(error)
             }
             if let result = res.result, let faceRecords = result.faceRecords {
                 self.apiResult = result
-                print(faceRecords[0])
+                DispatchQueue.main.async {
+                    self.decorFace(faceRecord: FaceRecord(data: faceRecords[0]))
+                }
             }
             return nil
-        }
+        })
     }
     
-    func decorFace(faceRecord: FaceRecord) -> UIImage? {
+    func decorFace(faceRecord: FaceRecord) {
         
         let faceImage = imageView.image!
         
-        
+        let landmarks = faceRecord.landmarks()
         let mustacheRect = faceRecord.mustacheRect(faceImage: faceImage)
-        if mustacheRect == nil {
-            return faceImage
-        }
+//        let beardRect = faceRecord.beardRect(faceImage: faceImage)
+        
         let mustacheImage = UIImage(named: "mustache")
+//        let beardImage = UIImage(named: "beard")
         
         // Draw on the face image
         UIGraphicsBeginImageContext(imageView.image!.size)
+        let context = UIGraphicsGetCurrentContext()
+        context?.saveGState()
         faceImage.draw(at: CGPoint.zero)
         
-        mustacheImage?.draw(in: mustacheRect!)
+        if mustacheRect != nil {
+            mustacheImage?.draw(in: mustacheRect!)
+        }
+        if landmarks != nil {
+            for landmark in landmarks! {
+                let circle = CGRect(x: CGFloat(truncating: landmark.x!) * faceImage.size.width, y: CGFloat(truncating: landmark.y!) * faceImage.size.height, width: 30, height: 30)
+                context?.setFillColor(UIColor.white.cgColor)
+                context?.fillEllipse(in: circle)
+            }
+        }
         
+//        if beardRect != nil {
+//            beardImage?.draw(in: beardRect!)
+//        }
+        
+        context?.restoreGState()
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         
         UIGraphicsEndImageContext()
-        return newImage
+        loading.stopAnimating()
+        imageView.image = newImage
     }
     
 }

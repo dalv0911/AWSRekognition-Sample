@@ -51,9 +51,27 @@ class FaceRecord
             return nil
         }
         let diffMouth = mouthRight!.x!.floatValue - mouthLeft!.x!.floatValue
-        let mouthWidth = CGFloat(diffMouth) * faceImage.size.width + 400
+        let mouthWidth = CGFloat(diffMouth) * faceImage.size.width + 450
         
         return CGRect(x: CGFloat(truncating: nose!.x!) * faceImage.size.width - mouthWidth / 2, y: CGFloat(truncating: nose!.y!) * faceImage.size.height + 5, width: mouthWidth, height: 600)
+    }
+    
+    func beardRect(faceImage: UIImage) -> CGRect? {
+        if data.faceDetail == nil || data.faceDetail?.landmarks == nil {
+            return nil
+        }
+        var chinBottom: AWSRekognitionLandmark?
+        
+        for item in data.faceDetail!.landmarks! {
+            if item.types == AWSRekognitionLandmarkType.chinBottom {
+                chinBottom = item
+            }
+        }
+        if chinBottom == nil {
+            return nil
+        }
+        
+        return CGRect(x: CGFloat(truncating: chinBottom!.x!) * faceImage.size.width - 200, y: CGFloat(truncating: chinBottom!.y!) * faceImage.size.height - 100, width: 400, height: 600)
     }
     
     func toTableData() -> [ApiDataCellModel] {
@@ -102,5 +120,9 @@ class FaceRecord
         array.append(cell)
         
         return array
+    }
+    
+    func landmarks() -> [AWSRekognitionLandmark]? {
+        return data.faceDetail?.landmarks
     }
 }

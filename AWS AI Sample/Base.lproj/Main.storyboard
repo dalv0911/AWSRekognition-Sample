@@ -42,6 +42,12 @@
                                     <action selector="openApiResultView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHt-Z5-9HD"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tHU-gR-Yze">
+                                <rect key="frame" x="124" y="585" width="20" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.98048898959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -50,8 +56,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rFI-va-Bak" secondAttribute="trailing" constant="62" id="Gk5-7e-oeQ"/>
                             <constraint firstItem="fEI-KU-jdw" firstAttribute="top" secondItem="Whw-sc-TsM" secondAttribute="bottom" constant="30" id="PV9-tF-Mhg"/>
                             <constraint firstItem="rFI-va-Bak" firstAttribute="centerY" secondItem="fEI-KU-jdw" secondAttribute="centerY" id="Tus-F5-cNb"/>
+                            <constraint firstItem="tHU-gR-Yze" firstAttribute="centerY" secondItem="Q80-Hl-90I" secondAttribute="centerY" id="X3b-KP-yWd"/>
                             <constraint firstItem="Whw-sc-TsM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-5" id="Yai-tB-ORY"/>
                             <constraint firstItem="Whw-sc-TsM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bPR-f7-huG"/>
+                            <constraint firstItem="Q80-Hl-90I" firstAttribute="leading" secondItem="tHU-gR-Yze" secondAttribute="trailing" constant="8.5" id="izZ-tj-nQc"/>
                             <constraint firstItem="Whw-sc-TsM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="k5s-yc-RqL"/>
                             <constraint firstItem="fEI-KU-jdw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nGV-jk-PvK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fEI-KU-jdw" secondAttribute="bottom" constant="32" id="toH-Y5-68f"/>
@@ -61,6 +69,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Whw-sc-TsM" id="tU4-L2-Jy6"/>
+                        <outlet property="loading" destination="tHU-gR-Yze" id="luI-PR-NaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
